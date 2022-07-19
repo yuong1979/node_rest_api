@@ -12,6 +12,8 @@ app.listen(
 // //GET http://localhost:8080/tshirt
 // app.get('/tshirt')
 
+app.get("/", (_,res) => res.send("hello world"));
+
 //GET http://localhost:8080/tshirt - and fire a callback to handle the request
 app.get('/tshirt', (req, res) => {
 	res.status(200).send({
